@@ -34,8 +34,11 @@ public class Komplex {
         Komplex c = new Komplex(reel,imaag);
         return c;
     }
-
+//  deklarerar och konfiguerar funktionen för att multipliserar komplexa tall.
     public Komplex multiply(Komplex b) {
+        double real;
+        double imagi;
+
         return null;
     }
 }
