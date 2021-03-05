@@ -42,4 +42,5 @@ public class Komplex {
         Komplex c = new Komplex(reel,imaag);
         return c;
     }
+
 }
