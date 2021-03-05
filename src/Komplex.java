@@ -45,27 +45,24 @@ public class Komplex {
 
 
     public double arg() {
-        double a = real;
-        double b = imagi;
+        double a = real; double b = imagi; double c = 0;
         if (a > 0) {
-
+            c = Math.atan(b/a);
         }else if (a<0) {
             if (b >= 0) {
-
+                c = Math.atan(b/a) + Math.PI;
             }else if (b<0){
-
+                c = Math.atan(b/a) - Math.PI;
             }
         }else if (a==0) {
             if (b>0) {
-
+                c = (Math.PI)/2;
             }else if (b<0) {
-
+                c = (Math.PI/2)*(-1);
             }else if (b==0) {
-
+                c = 0;
             }
         }
-
-        double c = 0;
         return c;
     }
 }
