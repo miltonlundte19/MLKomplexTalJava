@@ -30,10 +30,7 @@ public class Komplex {
 
 //  funktionen för att addera två komplexa tall.
     public Komplex add(Komplex b) {
-        double reel = real + b.real;
-        double imaag = imagi + b.imagi;
-        Komplex c = new Komplex(reel,imaag);
-        return c;
+        return new Komplex( (real+b.real),(imagi+b.imagi) );
     }
 //  funktionen för att multiplicerar komplexa tall.
     public Komplex multiply(Komplex b) {
