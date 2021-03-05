@@ -45,6 +45,27 @@ public class Komplex {
 
 
     public double arg() {
-        return 0;
+        double a = real;
+        double b = imagi;
+        if (a > 0) {
+
+        }else if (a<0) {
+            if (b >= 0) {
+
+            }else if (b<0){
+
+            }
+        }else if (a==0) {
+            if (b>0) {
+
+            }else if (b<0) {
+
+            }else if (b==0) {
+
+            }
+        }
+
+        double c = 0;
+        return c;
     }
 }
