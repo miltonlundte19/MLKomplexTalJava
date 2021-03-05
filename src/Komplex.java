@@ -4,12 +4,13 @@ public class Komplex {
 //  deklarerar vad som ska vara med i Komplex.
     public double real;
     public double imagi;
-//  sejer att båda variablarna måste vara deklarerad (har ett värde).
+
+//  sejer att båda variablerna måste vara deklarerad (har ett värde).
     public Komplex(double real, double imagi) {
         this.real = real;
         this.imagi = imagi;
     }
-//  konverterar "harsen" till en läsvar string.
+//  konverterar "hach" till en läsbar string.
     @Override
     public String toString() {
         return "(" + real + " + " + imagi + "i)";
@@ -22,19 +23,19 @@ public class Komplex {
         Komplex komplex = (Komplex) o;
         return Double.compare(komplex.real, real) == 0 && Double.compare(komplex.imagi, imagi) == 0;
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(real, imagi);
     }
-//  deklarerar och konfigurerar funktionen för att addera två komplexa tall.
+
+//  funktionen för att addera två komplexa tall.
     public Komplex add(Komplex b) {
         double reel = real + b.real;
         double imaag = imagi + b.imagi;
         Komplex c = new Komplex(reel,imaag);
         return c;
     }
-//  deklarerar och konfiguerar funktionen för att multipliserar komplexa tall.
+//  funktionen för att multiplicerar komplexa tall.
     public Komplex multiply(Komplex b) {
         double reel, imaag;
         reel = (real*b.real)-(imagi*b.imagi);
@@ -43,9 +44,10 @@ public class Komplex {
         return c;
     }
 
-
+//  funktionen för argumentet i komplexa tal
     public double arg() {
         double a = real; double b = imagi; double c = 0;
+//       har flera if satser eftersom man använder olika formler för olika värden.
         if (a > 0) {
             c = Math.atan(b/a);
         }else if (a<0) {
