@@ -43,4 +43,8 @@ public class Komplex {
         return c;
     }
 
+
+    public double arg() {
+        return 0;
+    }
 }
